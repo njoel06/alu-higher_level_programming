@@ -4,13 +4,15 @@
 if __name__ == "__main__":
     import sys
 
-    argc = len(sys.argv) - 1
-    if argc == 0:
+    # Get all arguments (excluding script name)
+    args = sys.argv[1:]
+    # Print based on number of arguments
+    if len(args) == 0:
         print("0 arguments.")
-    elif argc == 1:
+    elif len(args) == 1:
         print("1 argument:")
-        print("1: {}".format(sys.argv[1]))
+        print("1: {}".format(args[0]))
     else:
-        print("{:d} arguments:".format(argc))
-        for i in range(1, argc + 1
-            print("{:d}: {}".format(i, sys.argv[i]))
+        print("{} arguments:".format(len(args)))                                                                    
+        for i, arg in enumerate(args, 1):  
+            print("{}: {}".format(i, arg))
