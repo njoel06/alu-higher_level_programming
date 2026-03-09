@@ -4,7 +4,7 @@
 
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or roman_string is None:
-        return 0    
+        return 0
 
     roman_values = {
         'I': 1,
@@ -29,4 +29,3 @@ def roman_to_int(roman_string):
         prev_value = value
 
     return result
-
