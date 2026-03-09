@@ -13,6 +13,6 @@ if __name__ == "__main__":
         print("1 argument:")
         print("1: {}".format(args[0]))
     else:
-        print("{} arguments:".format(len(args)))                                                                    
-        for i, arg in enumerate(args, 1):  
+        print("{} arguments:".format(len(args)))
+        for i, arg in enumerate(args, 1):
             print("{}: {}".format(i, arg))
