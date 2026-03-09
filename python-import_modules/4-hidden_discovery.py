@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+# 4-hidden_discovery.py
+
+if __name__ == "__main__":
+    import hidden_4
+
+# Get all names defined in the hidden_4 module
+    names = dir(hidden_4)
+
+# Filter and print names that don't start with '__'
+    for name in sorted(names):
+        if not name.startswith("__"):
+            print(name)
